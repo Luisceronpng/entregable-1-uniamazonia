@@ -1,0 +1,197 @@
+
+:root {
+    --color-verde-ua: #006b3f;
+    --color-verde-hover: #008f54;
+    --color-fondo-claro: #f4f6f8;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+.text-verde-ua {
+    color: var(--color-verde-ua) !important;
+}
+
+
+.menu-principal {
+    padding: 12px 0;
+    border-bottom: 4px solid var(--color-verde-ua);
+}
+
+.logo-universidad {
+    height: 75px; 
+    object-fit: contain;
+}
+
+.menu-principal .nav-link {
+    color: #444444;
+    transition: all 0.3s ease;
+    padding: 8px 18px !important;
+    border-radius: 6px;
+}
+
+.menu-principal .nav-link:hover {
+    color: var(--color-verde-ua) !important;
+    background-color: rgba(0, 107, 63, 0.08);
+}
+
+.btn-menu {
+    background-color: var(--color-verde-ua);
+    padding: 8px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.3s;
+    display: inline-block;
+}
+
+.btn-menu:hover {
+    background-color: var(--color-verde-hover);
+}
+
+
+.banner-universidad {
+    min-height: 100vh; 
+    padding-top: 100px;
+    background: linear-gradient(rgba(0, 107, 63, 0.88), rgba(0, 40, 20, 0.95)), 
+                url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    background-attachment: fixed;
+}
+
+.etiqueta-snies {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 8px 25px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.titulo-banner {
+    font-size: 5rem; 
+    letter-spacing: -2px;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.descripcion-banner {
+    font-size: 1.3rem;
+    max-width: 800px;
+    line-height: 1.7;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.btn-institucional {
+    display: inline-block;
+    background-color: #ffffff;
+    color: var(--color-verde-ua);
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 18px 45px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.btn-institucional:hover {
+    background-color: #e8f5e9;
+    color: var(--color-verde-ua);
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+
+.seccion-clara { background-color: var(--color-fondo-claro); }
+.seccion-blanca { background-color: #ffffff; }
+
+.titulo-seccion {
+    color: #222222;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.linea-decorativa {
+    width: 80px;
+    height: 4px;
+    background-color: var(--color-verde-ua);
+    border-radius: 2px;
+}
+
+.linea-decorativa-blanca {
+    width: 60px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.tarjeta-profunda {
+    background-color: #ffffff;
+    border: 2px solid #e0e4e8; 
+    border-bottom: 5px solid var(--color-verde-ua); 
+    border-radius: 12px;
+    height: 100%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06); 
+    transition: all 0.3s ease;
+}
+
+.tarjeta-profunda:hover {
+    transform: translateY(-8px); 
+    border-color: var(--color-verde-ua);
+    box-shadow: 0 15px 35px rgba(0, 107, 63, 0.15); 
+}
+
+.bg-ligero {
+    background-color: rgba(0, 107, 63, 0.04) !important;
+}
+
+.lista-institucional {
+    padding-left: 25px;
+}
+
+.lista-institucional li {
+    margin-bottom: 20px;
+    color: #444444;
+    line-height: 1.7;
+}
+
+.tarjeta-contacto {
+    background: linear-gradient(145deg, #006b3f 0%, #004025 100%);
+    box-shadow: 0 15px 40px rgba(0, 107, 63, 0.3);
+    border: 2px solid #00a859;
+}
+
+.pie-pagina {
+    background-color: #1a1a1a;
+    border-top: 5px solid var(--color-verde-ua);
+}
+
+@keyframes fadeInScale {
+    0% { opacity: 0; transform: scale(0.95) translateY(20px); }
+    100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.animar-entrada {
+    animation: fadeInScale 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@media (max-width: 768px) {
+    .titulo-banner {
+        font-size: 3rem;
+    }
+    .logo-universidad {
+        height: 60px;
+    }
+    .tarjeta-contacto {
+        margin-top: 2rem;
+    }
+}
